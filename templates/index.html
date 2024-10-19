@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground Assigment-- Husam Saad</title>
+
+</head>
+
+<body>
+
+    <h1>Hello Flask! This is playground Assigment - Husam Saad</h1>
+
+    {% if num<=3 %} <div class="boxes">
+        <div class="bluebox" style="background-color: {{color}};"></div>
+        <div class="bluebox" style="background-color: {{color}};"></div>
+        <div class="bluebox" style="background-color: {{color}};"></div>
+        </div>
+        {% else %}
+        <div class="boxes">
+            {% for i in range(0,num,1)%}
+            <div class="bluebox" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+
+</body>
+
+<style>
+    h1 {
+        border-bottom: 2px solid black;
+        text-align: center;
+    }
+
+    .boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .bluebox {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-color: #9FC5F8;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 5px;
+    }
+
+    .greenbox {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-color: #93C47D;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 5px;
+    }
+</style>
+
+</html>
